@@ -7,9 +7,10 @@ input enab,load,clk,rst;
 always@(posedge clk)begin
 
 if(rst) cnt_out<=0;
-else if(!load) cnt_out<=cnt_out+1;
-else cnt_out<=cnt_in;
+else begin
+
+if (enab) begin  if(!load) cnt_out<=cnt_out+1; else cnt_out<=cnt_in; end
 
 end
-
+end 
 endmodule
