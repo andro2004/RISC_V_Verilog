@@ -1,2 +1,2 @@
 # RISC_V_Verilog
-this project implements RISC_V processor
+this project implements scratch simple RISC_V processor
